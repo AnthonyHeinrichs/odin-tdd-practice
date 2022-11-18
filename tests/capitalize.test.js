@@ -5,5 +5,5 @@ test("Text should return capitalized (Happy path test 1)", () => {
 });
 
 test("Multi line text should return capitalized (Happy path test 1)", () => {
-  expect(capitalize("welcome to my github")).toBe("Welcome to my github")
-})
+  expect(capitalize("welcome to my github")).toBe("Welcome to my github");
+});

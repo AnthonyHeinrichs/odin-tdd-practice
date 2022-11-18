@@ -30,10 +30,19 @@ const divide = (x, y) => {
   }
 }
 
+const multiply = (x, y) => {
+  if (validNumbers(x, y)) {
+    return x * y
+  } else {
+    return "Not valid numbers"
+  }
+}
+
 const calculator = {
   add,
   subtract,
-  divide
+  divide,
+  multiply
 }
 
 module.exports = calculator

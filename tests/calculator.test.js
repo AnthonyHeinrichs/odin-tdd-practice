@@ -51,3 +51,19 @@ test("divide(20, 5), 20 + 5 should be 4", () => {
 test("divide('cat', 'dog'), 3 is not a valid number", () => {
   expect(calculator.divide("cat", "dog")).toBe("Not valid numbers");
 });
+
+test("multiply(2, 7), 2 * 7 should close to 0.28", () => {
+  expect(calculator.multiply(2, 7)).toBe(14);
+});
+
+test("multiply(243, 46), 243 * 46 should equal 11178", () => {
+  expect(calculator.multiply(243, 46)).toBeCloseTo(11178);
+});
+
+test("multiply(20, 5), 20 * 5 should be 100", () => {
+  expect(calculator.multiply(20, 5)).toBe(100);
+});
+
+test("multiply('cat', 'dog'), 3 is not a valid number", () => {
+  expect(calculator.multiply(true, false)).toBe("Not valid numbers");
+});

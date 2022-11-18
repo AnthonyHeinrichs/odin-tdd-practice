@@ -22,9 +22,18 @@ const subtract = (x, y) => {
   }
 }
 
+const divide = (x, y) => {
+  if (validNumbers(x, y)) {
+    return x / y
+  } else {
+    return "Not valid numbers"
+  }
+}
+
 const calculator = {
   add,
-  subtract
+  subtract,
+  divide
 }
 
 module.exports = calculator

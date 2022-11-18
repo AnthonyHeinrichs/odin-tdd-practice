@@ -32,6 +32,22 @@ test("subtract(1.7, 0.4), 1.7 - 0.4 should be close to 1.3", () => {
   expect(calculator.subtract(1.7, 0.4)).toBeCloseTo(1.3);
 });
 
-test("subtract('3', 8), 3 is not a valid number", () => {
+test("subtract(93, 'bob'), 3 is not a valid number", () => {
   expect(calculator.subtract(93, "bob")).toBe("Not valid numbers");
+});
+
+test("divide(2, 7), 2 + 7 should close to 0.28", () => {
+  expect(calculator.divide(2, 7)).toBeCloseTo(0.285);
+});
+
+test("divide(243, 46), 243 + 46 should equal 197", () => {
+  expect(calculator.divide(243, 46)).toBeCloseTo(5.28);
+});
+
+test("divide(20, 5), 20 + 5 should be 4", () => {
+  expect(calculator.divide(20, 5)).toBe(4);
+});
+
+test("divide('cat', 'dog'), 3 is not a valid number", () => {
+  expect(calculator.divide("cat", "dog")).toBe("Not valid numbers");
 });

@@ -14,8 +14,17 @@ const add = (x, y) => {
   }
 }
 
+const subtract = (x, y) => {
+  if (validNumbers(x, y)) {
+    return x - y
+  } else {
+    return "Not valid numbers"
+  }
+}
+
 const calculator = {
-  add
+  add,
+  subtract
 }
 
 module.exports = calculator
